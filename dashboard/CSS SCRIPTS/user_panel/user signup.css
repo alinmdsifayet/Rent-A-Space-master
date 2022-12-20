@@ -1,0 +1,167 @@
+form {
+  width: 340px;
+  text-align: left;
+  margin-left: 100px;
+  padding: 50px;
+  margin-top: 90px;
+  background-color: white;
+  /*border-radius: 28px;*/
+  height: 540px;
+  /*opacity: 60%;*/
+  border-color: black;
+  border-style: solid;
+  box-shadow: 5px 10px 18px;
+}
+
+input[type="email"] {
+  padding-top: 8px;
+  font-size: 18px;
+  width: 310px;
+  border: none;
+  background: transparent;
+  border-bottom: 1px solid;
+  padding-right: 28px;
+  margin-top: 7px;
+  color: black;
+  outline: none;
+}
+
+input[type="password"] {
+  padding-top: 8px;
+  font-size: 18px;
+  width: 310px;
+  border: none;
+  background: transparent;
+  border-bottom: 1px solid;
+  padding-right: 28px;
+  margin-top: 7px;
+  color: black;
+  outline: none;
+}
+
+input[type="text"] {
+  padding-top: 8px;
+  font-size: 18px;
+  width: 310px;
+  border: none;
+  background: transparent;
+  border-bottom: 1px solid;
+  padding-right: 28px;
+  /*font-size: 25px;*/
+  margin-top: 7px;
+  color: black;
+  outline: none;
+}
+
+/*.position {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}*/
+
+/*body{
+  /*background-image: url("sea.jpeg");
+  background-repeat: no-repeat;
+  margin: 0;
+  padding: 0;
+  background-size: cover;
+}*/
+
+.size {
+  max-width: 700px;
+  margin-top: 40px;
+  margin-bottom: 10px;
+  margin: auto;
+  max-height: 430px;
+}
+
+.header {
+  padding-top: -10px;
+}
+
+.email {
+  padding-top: 28px;
+  font-size: 18px;
+}
+
+.username {
+  padding-top: 18px;
+  font-size: 18px;
+}
+
+.password {
+  padding-top: 18px;
+  font-size: 18px;
+}
+
+.repeat-password {
+  padding-top: 18px;
+  font-size: 18px;
+}
+
+.cancel:hover {
+  opacity: 0.5;
+}
+
+.sign-up:hover {
+  opacity: 0.5;
+  background-color: green;
+}
+
+.sign-up {
+  padding: 13px;
+  float: center;
+  width: 342px;
+  font-size: 15px;
+  /*border-radius: 25px;*/
+  margin-right: 23px;
+  margin-top: 15px;
+  background: transparent;
+  background-color: purple;
+  color: white;
+}
+
+.cancel {
+  /*border-radius: 25px;
+  padding: 20px;
+  float: left;
+  width: 130px;
+  font-size: 25px;
+  background-color: lightgrey;*/
+  padding: 13px;
+  float: center;
+  width: 342px;
+  font-size: 19px;
+  /*border-radius: 25px;*/
+  margin-right: 32px;
+  background: transparent;
+  background-color: purple;
+  color: white;
+}
+
+.checked {
+  margin-top: 12px;
+  font-size: 30px;
+}
+
+.agreement {
+  font-size: 18px;
+  color: black;
+  padding-top: 30px;
+}
+
+a {
+  color: purple;
+}
+
+.alert-danger {
+  padding: 20px;
+  background-color: #f44336;
+  color: white;
+}
+.no-account {
+  font-size: 17px;
+  padding-left: 56px;
+  
+}

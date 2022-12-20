@@ -1,0 +1,125 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;400&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+header {
+    /*to make the background a little bit dark and put transition effect*/
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../../ICONS/cf3.jpg");
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+}
+
+ul {
+    float: right;
+    list-style-type: none;
+    margin-top: 25px;
+}
+
+ul li {
+    display: inline-block;
+}
+
+ul li a {
+    text-decoration: none;
+    color: black;
+    padding: 5px 20px;
+    border: 1px solid transparent;
+    transition: 0.5s;
+}
+
+ul li a:hover {
+    background-color: black;
+    color: white;
+}
+
+ul li.active-mode a {
+    background-color: white;
+    color: black;
+}
+
+.company-logo img {
+    float: left;
+    width: 360px;
+    height: auto;
+}
+
+.main-page {
+    max-width: 1200px;
+    margin: auto;
+}
+
+.platform-selection {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.platform-selection h2 {
+    color: white;
+    font-size: 60px;
+}
+
+ .button {
+    position: absolute;
+    top: 60%;
+    left: 60%;
+    /* transform: translate(-50%, -50%); */
+    display: inline-block;
+}
+
+
+.btn {
+    border: 1px solid black;
+    padding: 10px 30px;
+    transition: 1.2s;
+    text-decoration: none;
+    display: inline-block;
+    background-color: rgba(255, 255, 255, 0.726);
+    color: rgb(0, 0, 0);
+    background-color: black;
+    color: white;
+  
+} 
+
+
+.btn:hover {
+    /*background-color: rgba(128, 128, 128, 0.911);
+    color: black;*/
+    background-color: white;
+    color: black;
+}
+
+/* .container{
+    position: absolute;
+    display: inline-block;
+    margin: 23%
+} */
+
+@media only screen and (max-width: 1000px) {
+    .platform-selection {
+      /* background-color: lightblue; */
+      resize: none;
+      text-align: center;
+    }
+  }
+
+  a {
+    text-decoration: none;
+    /* color: white; */
+    /* padding: 5px 20px; */
+    /* border: 1px solid transparent; */
+    /* transition: 0.5s; */
+    color: white;
+    background: transparent;
+    border: 1px solid transparent;
+}
+
+ a:hover {
+    background-color: white;
+    color: black;
+}

@@ -1,0 +1,582 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;400&display=swap');
+* {
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Poppins', sans-serif;
+}
+
+.bg-img {
+    /*background image*/
+    background-image: url("../../ICONS/s4.jpg");
+    min-height: 450px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+
+
+/*navbar positioning*/
+
+.container {
+    position: absolute;
+    margin: 20px;
+    width: auto;
+    padding: 12px;
+}
+
+
+/*navbar fixing*/
+
+.topnav {
+    overflow: hidden;
+    background-color: rgba(0, 0, 0, 0.719);
+}
+
+.topnav .fa {
+    margin-right: 10px;
+    font-weight: bold;
+}
+
+
+/*links for navbar*/
+
+.topnav a {
+    float: left;
+    color: #f2f2f2;
+    text-align: center;
+    text-decoration: none;
+    font-size: 15px;
+    padding: 12px 14px;
+}
+
+.topnav a:hover {
+    background-color: #ddd;
+    color: black;
+}
+
+.title {
+    margin-top: 3%;
+}
+
+.title h1 {
+    font-size: 39px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+
+/*.founders-headline {
+    margin-top: 9px;
+}
+
+.founders-headline h1 {
+    font-size: 35px;
+    margin-bottom: 60px;
+    text-align: center;
+}*/
+
+
+/*worker's card section*/
+
+
+/* {
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    font-family: arial;
+}
+
+.mainframe {
+    margin: 2%;
+}
+
+.card {
+    margin-top: 120px;
+    width: 18%;
+    display: inline-block;
+    box-shadow: 0px 2px 22px black;
+    border-top-right-radius: 25px;
+    border-top-left-radius: 25px;
+    margin-bottom: 90px;
+    /*border-radius: 5px; 
+       /* margin: 2%;
+    margin-left: 87px;
+}
+
+.card:hover {
+    /*background-color: brown;*/
+/* 
+box-shadow: 0px 2px 22px rgba(0,
+0,
+0,
+0.575);
+
+} */
+
+/*end of worker's card section
+
+.image img {
+    width: 100%;
+    border-top-right-radius: 25px;
+    border-top-left-radius: 25px;
+}
+
+.bio-of-founder {
+    text-align: center;
+    padding: 10px;
+}*/
+h1 {
+    font-size: 20px;
+}
+
+/*.description {
+    padding: 3px;
+    text-align: center;
+    padding-top: 10px;
+    border-bottom-right-radius: 5px;
+    border-bottom-left-radius: 5px;
+}
+
+button {
+    margin-top: 40px;
+    margin-bottom: 5px;
+    background-color: black;
+    border: 1px solid white;
+    color: white;
+    border-radius: 5px;
+    padding: 10px;
+    width: 320px;
+    font-size: 16px;
+}
+
+button:hover {
+    background-color: white;
+    color: black;
+    transition: 0.5s;
+    cursor: pointer;
+}*/
+
+/*card*/
+
+/*.img-section {
+    float: right;
+    width: 40%;
+    margin-top: 100px;
+}
+
+.img-section img {
+    width: 100%;
+    height: auto;
+}
+
+.content-section .title {
+    font-size: 28px;
+}
+
+.content h3 {
+    margin-top: 10px;
+    color: black;
+    font-size: 20px;
+}
+
+.content p {
+    /*margin-top: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 19px;
+    line-height: 2;
+    font-family: 'Poppins', sans-serif;
+    font-size: 18px;
+    padding: 30px;
+    text-align: justify;
+    font-family: 'Poppins', sans-serif;
+}
+
+.content {
+    margin-top: 5px;
+}
+
+.button2 a {
+    margin-top: 55px;
+    /*margin-left: 35px;
+}
+
+.button2 a {
+    background-color: rgba(255, 255, 255, 0.904);
+    padding: 13px 45px;
+    text-decoration: none;
+    color: #333;
+    font-size: 20px;
+    letter-spacing: 2px;
+    margin-top: 45px;
+    box-shadow: 2px 6px 20px rgba(0, 0, 0, 0.555);
+}
+
+.button2 a:hover {
+    background-color: #333;
+    color: #f2f2f2;
+}*/
+
+/*button-3*/
+
+/*.button3 a {
+    margin-top: 76px;
+}
+
+.button3 a {
+    background-color: rgba(255, 255, 255, 0.904);
+    padding: 13px 45px;
+    color: #333;
+    text-decoration: solid;
+    background-color: gold;
+    font-weight: bolder;
+    font-size: 17px;
+    letter-spacing: 2px;
+    margin-top: 45px;
+    box-shadow: 2px 6px 20px rgba(0, 0, 0, 0.555);
+}
+
+.button3 a:hover {
+    background-color: black;
+    color: gold;
+}*/
+
+/*button-3*/
+
+/*.social-media {
+    margin-top: 35px;
+}
+
+.social-media i {
+    color: rgb(218, 165, 32);
+    font-size: 30px;
+    padding: 0px 10px;
+    margin-top: 10px;
+    margin-left: 0px;
+}
+
+.social-media i:hover {
+    color: black;
+}*/
+
+/* .search-bar {
+    text-align: center;
+  }
+
+
+  input[type=text] {
+      width: 100%;
+      padding: 12px 20px;
+      margin: 8px 0;
+      display: block;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      box-sizing: border-box;
+  }
+
+  select{
+
+     width: 100%;
+      padding: 12px 20px;
+      margin: 8px 0;
+      display: block;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      box-sizing: border-box;
+
+  }
+  
+
+  
+.search-bar button {
+    float: right;
+    padding: 6px 10px;
+    margin-top: 8px;
+    margin-right: 16px;
+    background: #ddd;
+    font-size: 17px;
+    border: none;
+    cursor: pointer;
+    width: 50px;
+  }
+  
+  .search-bar button:hover {
+    background: #ccc;
+  } */
+
+/*new-code*/
+.container-01 {
+    width: 100%;
+    height: auto;
+}
+.container-01 {
+    margin-top: 10px;
+}
+.row {
+    white-space: nowrap;
+    width: auto;
+    padding: 25px;
+    margin: 15%;
+    margin-bottom: 5px;
+    margin-top: 45px;
+    border: 1px solid black;
+    box-shadow: 1px 2px 3px black;
+    border-radius: 9.5px;
+    text-align: justify;
+    background-color: #f2f2f2;
+}
+
+/*for making all elements on the same line*/
+.row>div {
+    width: auto;
+    display: inline-block;
+}
+.row:hover {
+    box-shadow: 0px 2px 22px rgba(0, 0, 0, 0.575);
+}
+.image {
+    margin-left: 35px;
+}
+.info {
+    margin-left: 22px;
+}
+.rating {
+    float: right;
+    margin-right: 35px;
+}
+button {
+    margin-left: 19px;
+    background-color: black;
+    border: 1px solid;
+    color: white;
+    border-radius: 8px;
+    width: 68px;
+    font-size: 16px;
+    padding: auto;
+    height: 35px;
+}
+button:hover {
+    background-color: white;
+    color: black;
+    transition: 0.5s;
+    cursor: pointer;
+}
+.p {
+    font-size: medium;
+    text-decoration: solid;
+    font-weight: bold;
+}
+
+/*search and select bar*/
+.row-0 {
+    white-space: nowrap;
+    width: auto;
+    padding: 25px;
+    margin: 2.4%;
+    margin-bottom: 5px;
+}
+
+/*for making all the elements on the same line*/
+.row-0>div {
+    width: auto;
+    display: inline-block;
+}
+.row-0 .input {
+    border: 0;
+    outline: none;
+    color: black;
+}
+/* .search-option {
+    width: 600px;
+    margin: 38px auto;
+    box-shadow: 1px 9px 13px black;
+    border-radius: 17px;
+    margin-left: 85px;
+}
+.search-option .search-box {
+    position: relative;
+    width: 500px;
+    height: 60px;
+}
+.search-option .search-box .input {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    padding: 10px 20px;
+    border-radius: 3px;
+    font-size: 18px;
+}
+.search-option .search-box .btn {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 70px;
+    height: 100%;
+    background-color: black;
+    color: black;
+    z-index: 1;
+    cursor: pointer;
+}
+.search-option .search-box .btn:hover {
+    background-color: rgb(216, 186, 15);
+}
+.search-option .search-box .btn.btn_common .fas {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #fff;
+    font-size: 20px;
+}
+.search-bar .search-box .input {
+    border-radius: 17px;
+    border: 1px solid black;
+}
+.search-bar .search-box .btn {
+    width: 125px;
+    height: 45px;
+    top: 8px;
+    right: 5px;
+    border-radius: 3px;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.search-bar .search-box .btn {
+    border-radius: 14px;
+}
+.search-bar .search-box .input {
+    padding-right: 145px;
+} */
+
+
+/*old-code*/
+/*dropdown*/
+/* select {
+    width: auto;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: block;
+    margin-right: 90px;
+    box-sizing: border-box;
+    border: 1px solid black;
+    box-shadow: 1px 9px 13px black;
+    border-radius: 9.5px;
+    text-align: center;
+    font-size: 17px;
+}
+.dropdown {
+    float: right;
+    margin: 1.7%;
+    margin-top: 35.5px;
+}
+.container-00 {
+    width: auto;
+} */
+
+
+/*new-code*/
+select {
+    width: auto;
+    height: 50px;
+    padding: 7px 20px;
+    display: inline-block;
+    /* margin-right: 5px; */
+    box-sizing: border-box;
+    border: 1px solid black;
+    box-shadow: 1px 9px 13px black;
+    border-radius: 9.5px;
+    text-align: center;
+    font-size: 17px;
+}
+
+.dropdown {
+    /* float: right; */
+    margin: 4%;
+    margin-top: 12px;
+    /* margin-left: 700px; */
+    float: right;
+}
+
+.container-00 {
+    width: auto;
+    margin-bottom: 30px;
+}
+
+.choose-priority {
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    /*new-code*/
+    /* margin: 0 auto;  */
+    /* width:250px;  */
+    margin-left: 300px;
+    margin-top: 95px;
+}
+
+.choose-priority label {
+    margin: 3.9px 8.7px 4.9px 0;
+}
+
+.choose-priority input {
+    vertical-align: middle;
+    margin: 5px 10px 5px 0;
+    padding: 10px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+}
+
+.choose-priority button {
+    width: auto;
+    padding: 10px 20px;
+    background-color: black;
+    border: 1px solid #ddd;
+    color: white;
+    cursor: pointer;
+    margin-left: 5px;
+    height: 50px;
+    border-radius: 9.5px;
+    box-shadow: 1px 9px 13px black;
+}
+
+.choose-priority button:hover {
+    background-color: rgb(216, 186, 15);
+    color: black;
+    transition: 0.5s;
+}
+
+@media (max-width: 300px) {
+    .choose-priority input {
+        margin: 8px 0;
+    }
+    .choose-priority {
+        flex-direction: column;
+        align-items: stretch;
+    }
+}
+
+.btn {
+    border: 1px solid black;
+    border-radius: 12px;
+    width: 12px;
+    padding: 10px 30px;
+    transition: 0.5s;
+    text-decoration: none;
+    /*background-color: rgba(255, 255, 255, 0.726);
+    color: rgb(0, 0, 0);*/
+    background-color: black;
+    color: white;
+}
+
+.btn:hover {
+    /*background-color: rgba(128, 128, 128, 0.911);
+    color: black;*/
+    background-color: white;
+    color: black;
+}

@@ -1,0 +1,13 @@
+#button{
+
+    cursor: pointer;
+}
+#button:hover{
+
+    transition: all 0.1s;
+    /* transform: rotate(-360deg) scale(1.3); */
+}
+.image{
+
+    text-align: center;
+}

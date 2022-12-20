@@ -1,0 +1,175 @@
+form {
+    width: 354px;
+    text-align: left;
+    margin-left: 100px;
+    padding: 50px;
+    margin-top: 90px;
+    background-color: white;
+    /*border-radius: 25px;*/
+    height: 514px;
+    /*opacity: 55%;
+    border-color: black;
+    border-style: solid;*/
+    box-shadow: 5px 10px 18px;
+}
+
+input[type=text] {
+    padding-top: 10px;
+    padding-bottom: 5px;
+    font-size: 16px;
+    width: 320px;
+    height: 19px;
+    text-align: center;
+    /*border: solid;*/
+    /*border-color: unset;*/
+    background-color: whitesmoke;
+    /*border-radius: 10px;*/
+    border-width: 1px;
+    /*background: transparent;*/
+    /*border-bottom: 2px solid;*/
+    padding-right: 28px;
+    margin-top: 7px;
+    color: black;
+    outline: none;
+}
+
+input[type=email] {
+    padding-top: 10px;
+    padding-bottom: 5px;
+    font-size: 16px;
+    width: 320px;
+    height: 19px;
+    text-align: center;
+    /*border: solid;*/
+    /*border-color: unset;*/
+    background-color: whitesmoke;
+    /*border-radius: 10px;*/
+    border-width: 1px;
+    /*background: transparent;*/
+    /*border-bottom: 2px solid;*/
+    padding-right: 28px;
+    margin-top: 7px;
+    color: black;
+    outline: none;
+}
+
+input[type=tel] {
+    padding-top: 10px;
+    padding-bottom: 5px;
+    font-size: 16px;
+    width: 320px;
+    height: 19px;
+    text-align: center;
+    /*border: solid;*/
+    /*border-color: unset;*/
+    background-color: whitesmoke;
+    /*border-radius: 10px;*/
+    border-width: 1px;
+    /*background: transparent;*/
+    /*border-bottom: 2px solid;*/
+    padding-right: 28px;
+    margin-top: 7px;
+    color: black;
+    outline: none;
+}
+
+input[type=password] {
+    padding-top: 10px;
+    padding-bottom: 5px;
+    font-size: 16px;
+    width: 320px;
+    height: 19px;
+    text-align: center;
+    /*border: solid;*/
+    /*border-color: unset;*/
+    background-color: whitesmoke;
+    /*border-radius: 10px;*/
+    border-width: 1px;
+    /*background: transparent;*/
+    /*border-bottom: 2px solid;*/
+    padding-right: 28px;
+    margin-top: 7px;
+    color: black;
+    outline: none;
+}
+
+.register {
+    padding: 10px;
+    float: center;
+    width: 350px;
+    font-size: 17px;
+    height: 46px;
+    /*border-radius: 25px;*/
+    background-color: orange;
+    color: white;
+    margin-left: 0px;
+    padding-top: 14px;
+    margin-top: 15px;
+}
+
+
+/*body{
+
+  
+    background-repeat: no-repeat;
+    margin: 0;
+    padding: 0;
+    background-size: cover;
+  }*/
+
+.size {
+    max-width: 700px;
+    margin-top: 50px;
+    margin: auto;
+    max-height: 430px;
+}
+
+.background {
+    background-color: orange;
+}
+
+.header {
+    padding-top: -10px;
+    font-size: 14px;
+}
+
+.username {
+    padding-top: 13px;
+    font-size: 24px;
+}
+
+.email {
+    padding-top: 12px;
+    font-size: 27px;
+}
+
+.registration-id {
+    padding-top: 12px;
+    font-size: 24px;
+}
+
+.password {
+    padding-top: 12px;
+    font-size: 24px;
+}
+
+.repeat-password {
+    padding-top: 12px;
+    font-size: 24px;
+}
+
+.register:hover {
+    opacity: 0.5;
+}
+
+.agreement {
+    font-size: 18px;
+    /*color: rgb(15, 15, 15);*/
+    /*float: center*/
+    padding-left: 0px;
+    padding-top: 23px;
+}
+
+a {
+    color: orange;
+}

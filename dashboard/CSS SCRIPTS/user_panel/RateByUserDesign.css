@@ -1,0 +1,152 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;400&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", sans-serif;
+  /* resize: vertical; */
+  place-items: center;
+}
+
+header {
+  /*to make the background a little bit dark and put transition effect*/
+  background-image: linear-gradient(rgba(0, 0, 0, 0.295), rgba(0, 0, 0, 0.747)),
+    url("./rateme5.jpg");
+  height: 100vh;
+  background-size: cover;
+  background-position: center;
+}
+
+.card {
+  margin-top: 120px;
+  width: 30%;
+  display: inline-block;
+  box-shadow: 0px 2px 22px black;
+  border-top-right-radius: 25px;
+  border-top-left-radius: 25px;
+  margin-bottom: 90px;
+  /*border-radius: 5px; 
+       /* margin: 2%;*/
+  margin-left: 87px;
+  text-align: center;
+  height: 690px;
+  background-color: rgba(255, 255, 255, 0.247);
+}
+
+.card:hover {
+  /*background-color: brown;*/
+  box-shadow: 0px 2px 22px rgba(0, 0, 0, 0.575);
+}
+
+/*end of worker's card section*/
+
+.image img {
+  width: 100%;
+  border-top-right-radius: 25px;
+  border-top-left-radius: 25px;
+}
+
+h1 {
+  font-size: 20px;
+}
+
+p {
+  margin-top: 66px;
+  font-weight: 1000;
+  font-size: 16px;
+  color: rgb(0, 0, 0);
+}
+
+h3 {
+  font-size: 40px;
+}
+
+.description {
+  padding: 3px;
+  text-align: center;
+  padding-top: 10px;
+  border-bottom-right-radius: 5px;
+  border-bottom-left-radius: 5px;
+}
+
+button {
+  margin-top: 50px;
+  margin-bottom: 5px;
+  background-color: black;
+  border: 1px solid white;
+  color: white;
+  border-radius: 5px;
+  padding: 10px;
+  width: 380px;
+  font-size: 16px;
+}
+
+button:hover {
+  background-color: white;
+  color: black;
+  transition: 0.5s;
+  cursor: pointer;
+}
+
+/*card*/
+
+.container {
+  position: relative;
+  margin: auto;
+  width: 80%;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  display: flex;
+}
+
+.star-widget input {
+  display: none;
+}
+
+.star-widget label {
+  margin-top: 12px;
+  font-size: 37px;
+  color: rgb(255, 255, 255);
+  /* padding: 10px; */
+  margin-top: 6px;
+  padding-right: 39.5px;
+  float: right;
+  transition: 0.9s;
+  cursor: pointer;
+}
+
+input:not(:checked) ~ label:hover,
+input:not(:checked) ~ label:hover ~ label {
+  color: rgb(235, 200, 4);
+}
+
+input:checked ~ label {
+  color: rgb(235, 200, 4);
+}
+
+input#rate-1:checked ~ label {
+  color: rgb(235, 200, 4);
+  text-shadow: 0 0 20px #952;
+}
+
+input#rate-2:checked ~ label {
+  color: rgb(235, 200, 4);
+  text-shadow: 0 0 20px #952;
+}
+
+input#rate-3:checked ~ label {
+  color: rgb(235, 200, 4);
+  text-shadow: 0 0 20px #952;
+}
+
+input#rate-4:checked ~ label {
+  color: rgb(235, 200, 4);
+  text-shadow: 0 0 20px #952;
+}
+
+input#rate-5:checked ~ label {
+  color: rgb(235, 200, 4);
+  text-shadow: 0 0 20px #952;
+}

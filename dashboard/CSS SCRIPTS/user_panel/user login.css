@@ -1,0 +1,128 @@
+form {
+  width: 357px;
+  text-align: left;
+  padding: 50px;
+  margin-top: 140px;
+  /*margin-left: 1150px;
+    padding-left: 30px;
+    margin-top: 170px;
+    padding-top: 2px;*/
+  background-color: white;
+  /*border-radius: 25px;*/
+  height: 360px;
+  /*opacity: 55%;*/
+  border-color: black;
+  border-style: solid;
+  box-shadow: 5px 10px 18px;
+}
+
+input[type="text"] {
+  padding-top: 19px;
+  font-size: 20px;
+  width: 320px;
+  border: none;
+  background: transparent;
+  border-bottom: 1px solid;
+  padding-right: 28px;
+  margin-top: 7px;
+  color: black;
+  outline: none;
+}
+
+input[type="password"] {
+  padding-top: 19px;
+  font-size: 20px;
+  width: 320px;
+  border: none;
+  background: transparent;
+  border-bottom: 1px solid;
+  padding-right: 28px;
+  margin-top: 7px;
+  color: black;
+  outline: none;
+}
+
+input[type="email"] {
+  padding-top: 19px;
+  font-size: 20px;
+  width: 320px;
+  border: none;
+  background: transparent;
+  border-bottom: 1px solid;
+  padding-right: 28px;
+  margin-top: 7px;
+  color: black;
+  outline: none;
+}
+
+.sign-in {
+  padding: 10px;
+  float: center;
+  width: 355px;
+  font-size: 15px;
+  /*border-radius: 25px;*/
+  background-color: purple;
+  color: white;
+  margin-left: -3px;
+  margin-top: 24px;
+}
+
+.resolution {
+  max-width: 550px;
+  margin-top: 40px;
+  margin: auto;
+  max-height: 430px;
+}
+
+.position {
+  display: block;
+  /*margin-left: auto;
+    margin-right: auto;*/
+  margin-left: 105px;
+  margin-top: -115px;
+  width: 150px;
+  height: 130px;
+}
+
+.sign-in:hover {
+  opacity: 0.5;
+  background-color: green;
+}
+
+.agreement {
+  font-size: 20px;
+  margin-left: 45px;
+  padding-top: -7px;
+  padding-right: 27px;
+}
+
+.username {
+  padding-top: 31px;
+  font-size: 18px;
+}
+
+.password {
+  padding-top: 14px;
+  font-size: 18px;
+}
+
+.email {
+  font-size: 18px;
+  padding-top: 14px;
+}
+
+a {
+  color: purple;
+}
+
+.alert-danger {
+  padding: 20px;
+  background-color: #f44336;
+  color: white;
+}
+
+.no-account {
+  font-size: 17px;
+  float: left;
+  margin-left: 5px;
+}

@@ -1,0 +1,153 @@
+body {
+  background-color: orange;
+}
+
+form {
+  width: 346px;
+  margin-left: 110px;
+  margin-top: 120px;
+  padding: 50px;
+  /*margin-top: 170px;
+  padding-top: 2px;*/
+  background-color: white;
+  /*border-radius: 25px;*/
+  height: 240px;
+  /*opacity: 55%;
+  border-color: black;
+  border-style: solid;*/
+  box-shadow: 5px 12px 18px black;
+}
+
+input[type="text"] {
+  padding-top: 10px;
+  font-size: 15px;
+  width: 320px;
+  height: 25px;
+  text-align: center;
+  /*border: solid;*/
+  /*border-color: unset;*/
+  background-color: whitesmoke;
+  /*border-radius: 10px;*/
+  border-width: 1px;
+  /*background: transparent;*/
+  /*border-bottom: 2px solid;*/
+  padding-right: 20px;
+  margin-top: 7px;
+  color: black;
+  outline: none;
+}
+
+input[type="password"] {
+  padding-top: 10px;
+  font-size: 15px;
+  width: 320px;
+  height: 25px;
+  text-align: center;
+  /*border: solid;*/
+  /*border-color: unset;*/
+  background-color: whitesmoke;
+  /*border-radius: 10px;*/
+  border-width: 1px;
+  /*background: transparent;*/
+  /*border-bottom: 2px solid;*/
+  padding-right: 20px;
+  margin-top: 7px;
+  color: black;
+  outline: none;
+}
+
+.login {
+  padding: 10px;
+  float: center;
+  width: 343px;
+  font-size: 17px;
+  height: 46px;
+  /*border-radius: 25px;*/
+  background-color: orange;
+  color: white;
+  margin-left: -1px;
+  padding-top: 14px;
+  margin-top: 15px;
+  padding-left: 0px;
+}
+
+.position {
+  display: block;
+  /*margin-left: auto;
+margin-right: auto;*/
+  margin-left: 94px;
+  margin-top: -135px;
+  width: 150px;
+  height: 140px;
+}
+
+.login:hover {
+  /*opacity: 0.5;*/
+  background-color: white;
+  color: orange;
+  transform: 1s;
+}
+
+.button {
+  
+  margin-top: 20px;
+  text-align: center;
+ 
+  
+  
+}
+
+.btn {
+  border: 1px solid black;
+  padding: 10px 30px;
+  width: 700px;
+  height: 46px;
+ 
+  text-decoration: none;
+  /*background-color: rgba(255, 255, 255, 0.726);
+  color: rgb(0, 0, 0);*/
+  background-color: orange;
+  color: white;
+}
+
+.btn:hover {
+  /*background-color: rgba(128, 128, 128, 0.911);
+  color: black;*/
+  background-color:white;
+  color: orange;
+}
+
+/*.sign-up:hover{
+
+  opacity: 0.5;
+}*/
+
+.agreement {
+  font-size: 17px;
+  /*color: rgb(15, 15, 15);*/
+  /*float: center*/
+  padding-left: 62px;
+  padding-top: -7px;
+  margin-top: 28.9px;
+}
+
+.resolution {
+  max-width: 700px;
+  margin-top: 50px;
+  margin: auto;
+  max-height: 430px;
+}
+
+.password {
+  padding-top: 7px;
+  font-size: 25px;
+}
+
+.username {
+  padding-top: 50px;
+  font-size: 25px;
+}
+
+a {
+  color: orange;
+}

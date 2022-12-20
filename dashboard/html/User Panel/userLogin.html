@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Login</title>
+    <link rel="shortcut icon" type="image/x-icon" href="../../ICONS/mh1.png" />
+    <link href="https://fonts.googleapis.com/css?family=Karla:400,700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdn.materialdesignicons.com/4.8.95/css/materialdesignicons.min.css" />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous" />
+    <link rel="stylesheet" href="../../CSS Files/User Panel Designs/UserSignInDesign.css" />
+</head>
+
+<body>
+    <main>
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-sm-4 login-section-wrapper">
+                    <div class="brand-wrapper">
+                        <img src="../../ICONS/m11.png" alt="logo" class="logo" />
+                        <h3>Welcome to Shunbo!</h3>
+                    </div>
+                    <div class="login-wrapper my-auto">
+                        <h1 class="login-title">Log in</h1>
+
+                        <form id="loginform" action="#">
+                            <div class="form-group">
+                                <label for="email">Email</label>
+                                <input type="email" name="email" id="email" class="form-control"
+                                    placeholder="Enter your Email" />
+
+                                <!--start error message-->
+
+                                <div id="emailerror"></div>
+
+                                <!--end of error message-->
+                            </div>
+                            <div class="form-group mb-4">
+                                <label for="password">Password</label>
+                                <input type="password" name="password" id="password" class="form-control"
+                                    placeholder="Enter your Password" />
+
+                                <!--start error message-->
+
+                                <div id="passerror"></div>
+
+                                <!--end of error message-->
+                            </div>
+                            <input name="login" id="login" class="btn btn-block login-btn" type="submit"
+                                value="Login" />
+                        </form>
+
+                        <a href="./resetPassword.html" class="forgot-password-link">Forgot password?</a>
+                        <p class="login-wrapper-footer-text">
+                            Don't have an account?
+                            <a href="./userRegister.html" class="text-reset">Register here</a>
+                        </p>
+                    </div>
+                </div>
+                <div class="col-sm-8 px-0 d-none d-sm-block">
+                    <img src="../../ICONS/3568984.jpg" alt="login image" class="login-img" />
+                </div>
+            </div>
+        </div>
+    </main>
+    <script>
+        if (sessionStorage.getItem("uid") || sessionStorage.getItem("did")) {
+            //redirect to newsfeed
+            window.location.href = `./newsfeed.html`;
+        }
+        document
+            .getElementById("loginform")
+            .addEventListener("submit", login);
+
+        function login(e) {
+            e.preventDefault();
+            let email = document.getElementById("email").value;
+            let password = document.getElementById("password").value;
+
+            const emailregex = new RegExp(
+                /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/
+            );
+            const passregex = new RegExp(
+                /^(?=.*[A-Za-z])(?=.*\d)[A-Za-z\d]{8,}$/
+            );
+
+            if (!emailregex.test(email)) {
+                document.getElementById(
+                    "emailerror"
+                ).innerHTML = `<p style="font-weight: lighter;color: red;">
+                  <img src="../../ICONS/er.png" height="25px" width="25px">
+                  Please enter a valid email</p>`;
+                return;
+            }
+
+            if (!passregex.test(password) || password.length < 8) {
+                document.getElementById(
+                    "passerror"
+                ).innerHTML = `<p style="font-weight: lighter;color: red;">
+                  <img src="../../ICONS/er.png" height="25px" width="25px">
+                  Password must contain at least 8 character numeric letter (0-9) or alphabet (A-Z or a-z)</p>`;
+                return;
+            }
+
+            fetch("http://127.0.0.1:8000/api/user/login", {
+                method: "POST",
+                headers: {
+                    Accept: "application/json, text/plain, */*",
+                    "Content-type": "application/json",
+                },
+                body: JSON.stringify({
+                    email: email,
+                    password: password
+                }),
+            }).then((res) => {
+                resStatus = res.status;
+                if (resStatus >= 400) {
+                    return res.text().then((data) => {
+                        console.log(data.message);
+                        alert("Invalid Information");
+                    });
+                } else {
+                    return res.json().then((data) => {
+                        if (data.res == 1) {
+                            sessionStorage.setItem("userToken", data.token);
+                            sessionStorage.setItem("uid", data.user.id);
+                            console.log(data.user.id);
+                            window.location.href = "./newsfeed.html";
+                        }
+
+                    });
+                }
+            });
+        }
+    </script>
+</body>
+
+</html>

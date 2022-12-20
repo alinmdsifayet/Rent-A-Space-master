@@ -1,0 +1,156 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;400&display=swap');
+
+/* link--->https://www.quackit.com/css/css_color_codes.cfm */
+
+* {
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Poppins', sans-serif;
+    font-size: 14px;
+    /* background-color: #FFA500; */
+}
+
+body {
+    background-color: #f17777;
+}
+
+form {
+    width: 434.5px;
+    text-align: left;
+    position: absolute;
+    margin-left: 100px;
+    margin-top: 150px;
+    padding: 50px;
+    /*padding-left: 30px;
+      margin-top: 120px;
+      padding-top: 2px;
+      background-color: white;
+      /*border-radius: 25px;*/
+    /*opacity: 60%;*/
+    height: 384px;
+    background-color: white;
+    border: 1px solid white;
+    /* border-color: black; */
+    border-style: solid;
+    box-shadow: 2px 6px 30px rgba(20, 14, 14, 0.733);
+}
+
+input[type="password"] {
+    padding-top: 19px;
+    font-size: 18px;
+    width: 325px;
+    border: none;
+    background: transparent;
+    border-bottom: 1px solid;
+    padding-right: 28px;
+    margin-top: 7px;
+    color: black;
+    outline: none;
+}
+
+input[type="text"] {
+    padding-top: 19px;
+    font-size: 18px;
+    width: 325px;
+    border: none;
+    background: transparent;
+    border-bottom: 1px solid;
+    padding-right: 28px;
+    margin-top: 7px;
+    color: black;
+    outline: none;
+}
+
+.Login {
+    padding: 12px;
+    /* float: center; */
+    text-align: center;
+    margin-top: 24px;
+    width: 332px;
+    font-size: 17.5px;
+    height: 49px;
+    /*border-radius: 25px;*/
+    background-color: #e67c7c;
+    color: white;
+    margin-left: -3px;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.Login:hover {
+    background-color: white;
+    /* color:#FFA500; */
+    color: rgb(0, 0, 0);
+}
+
+.resolution {
+    max-width: 700px;
+    margin-top: 50px;
+    margin: auto;
+    max-height: 430px;
+}
+
+
+/*body{
+  
+      background-image: url("sea.jpeg");
+      background-repeat: no-repeat;
+      margin: 0;
+      padding: 0;
+      background-size: cover;
+  
+      }*/
+
+.position {
+    display: block;
+    /*margin-left: auto;
+          margin-right: auto;*/
+    margin-left: 98px;
+    margin-top: -152px;
+    width: 150px;
+    height: 130px;
+}
+
+.Login:hover {
+    opacity: 0.5;
+}
+
+.agreement {
+    font-size: 20px;
+    color: rgb(15, 15, 15);
+    padding-right: 30px;
+    margin-left: 25px;
+    padding-top: -2px;
+    box-align: "center";
+    margin-top: 9px;
+}
+
+.img {
+    padding-top: 45px;
+}
+
+.name {
+    padding-top: 18px;
+    font-size: 25px;
+}
+
+.password {
+    padding-top: 30px;
+    font-size: 25px;
+}
+
+.login {
+    padding-top: 30px;
+}
+
+a {
+    color: #e67c7c;
+}
+
+.alert-danger {
+    padding: 20px;
+    background-color: #f44336;
+    color: white;
+}

@@ -1,0 +1,13 @@
+#comment{
+
+    color: white;
+    background-color: rgb(86, 86, 231);
+
+
+}
+
+#comment:hover{
+
+    color:rgb(86, 86, 231);
+    background-color: white
+}

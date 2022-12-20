@@ -1,0 +1,26 @@
+.login,
+.image {
+  min-height: 100vh;
+}
+
+
+.bg-image {
+  background-image: url('../../ICONS/4824.jpg');
+  background-size: cover;
+  background-position: center center;
+}
+
+.btn{
+
+    height: 45px;
+    font-size: 20px;
+}
+
+input[type=text], input[type=password],input[email] {
+  
+   
+    height: 45px ;
+    /* border: 1px solid black; */
+    /* background: white; */
+  }
+

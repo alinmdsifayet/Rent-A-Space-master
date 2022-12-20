@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../../CSS Files/Psychiatrist Panel Designs/PsychiatristSignInDesign.css" />
+    <link rel="shortcut icon" type="image/x-icon" href="../../ICONS/mi3.png" />
+    <link href="https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css" rel="stylesheet" />
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" />
+    <title>Sign In</title>
+</head>
+
+<body>
+    <!--changed here-->
+    <div class="container-fluid">
+        <div class="row no-gutter">
+            <!-- The image half -->
+            <div class="col-md-7 d-none d-md-flex bg-image"></div>
+            <!-- The content half -->
+            <div class="col-md-5 bg-light">
+                <div class="login d-flex align-items-center py-5">
+                    <!-- Demo content-->
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-lg-10 col-xl-7 mx-auto">
+                                <h3 class="display-4">Sign In</h3>
+                                <p class="text-muted mb-4"></p>
+                                <form id="loginform">
+                                    <div class="form-group mb-3">
+                                        <input id="email" type="email" placeholder="Email address" required=""
+                                            autofocus="" class="form-control rounded-pill border-0 shadow-sm px-4" />
+
+                                        <!--start error message-->
+
+                                        <div id="emailerror"></div>
+
+                                        <!--end of error message-->
+                                    </div>
+                                    <div class="form-group mb-3">
+                                        <input id="password" type="password" placeholder="Password" required=""
+                                            class="form-control rounded-pill border-0 shadow-sm px-4" />
+
+                                        <!--start error message-->
+
+                                        <div id="passerror"></div>
+
+                                        <!--end of error message-->
+                                    </div>
+                                    <button type="submit" class="btn btn-primary btn-block mb-2 rounded-pill shadow-sm"
+                                        style="
+												height: 42px;
+												font-size: 17px;
+											">
+                                        Login&nbsp;<i class="bx bxs-log-in-circle"></i>
+                                    </button>
+                                    <a href="./resetPassword.html" class="alert-link" style="
+												text-align: center;
+												color: black;
+												font-weight: lighter;
+											">Forgot password?</a>
+                                    <a href="./docRegister.html" class="alert-link" style="
+												text-align: center;
+												color: black;
+												float: right;
+												font-weight: lighter;
+											">Don't have an account?
+                                    </a>
+                                    <!-- <div class="text-center d-flex justify-content-between mt-4"><p>Code by <a href="#" class="font-italic text-muted"> 
+                                            <u>Jassa</u></a></p></div> -->
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- End -->
+                </div>
+            </div>
+            <!-- End -->
+        </div>
+    </div>
+
+    <script>
+        if (sessionStorage.getItem("did")) {
+            //redirect to newsfeed
+            window.location.href = `./newsfeed.html`;
+        }
+        document
+            .getElementById("loginform")
+            .addEventListener("submit", login);
+
+        function login(e) {
+            e.preventDefault();
+            let email = document.getElementById("email").value;
+            let password = document.getElementById("password").value;
+
+            const emailregex = new RegExp(
+                /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/
+            );
+            const passregex = new RegExp(
+                /^(?=.*[A-Za-z])(?=.*\d)[A-Za-z\d]{8,}$/
+            );
+
+            if (!emailregex.test(email)) {
+                document.getElementById(
+                    "emailerror"
+                ).innerHTML = `<p style="font-weight: lighter;color: red;font-weight: 400;">
+                                            <img src="../../ICONS/er.png" height="25px" width="25px">
+                                            Please enter a valid email</p>`;
+                return;
+            }
+
+            if (!passregex.test(password) || password.length < 8) {
+                document.getElementById(
+                        "passerror"
+                    ).innerHTML =
+                    `<p style="font-weight: lighter;color: red;font-weight: 400;">
+                                            <img src="../../ICONS/er.png" height="25px" width="25px">
+                                            Password must contain at least 8 character numeric letter (0-9) or alphabet (A-Z or a-z)</p>`;
+                return;
+            }
+
+            fetch("http://127.0.0.1:8000/api/doc/login", {
+                method: "POST",
+                headers: {
+                    Accept: "application/json, text/plain, */*",
+                    "Content-type": "application/json",
+                },
+                body: JSON.stringify({
+                    email: email,
+                    password: password
+                }),
+            }).then((res) => {
+                resStatus = res.status;
+                if (resStatus >= 400) {
+                    return res.text().then((data) => {
+                        console.log(data.message);
+                        alert("Invalid Information");
+                    });
+                } else {
+                    return res.json().then((data) => {
+
+                        if (data.res == 1) {
+                            sessionStorage.setItem("docToken", data.token);
+                            sessionStorage.setItem("did", data.user.id);
+                            window.location.href = "./newsfeed.html";
+                        }
+
+                    });
+                }
+            });
+        }
+    </script>
+</body>
+
+</html>

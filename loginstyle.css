@@ -1,0 +1,114 @@
+body
+{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    background-image: url(Images/modern-platform-bedroom-sets.jpg);
+    background-size: cover;
+    background-position: centre;
+}
+
+.sign-up-form
+{
+    width: 300px;
+         box-shadow: 0 0 3px 0 rgba(0,0,0,0.3);
+         background: #000000;
+         padding: 20px;
+         margin: 8% auto 0;
+         text-align: center;    
+         /*background-image: url(Images/modern-platform-bedroom-sets.jpg);*/
+         opacity: 0.65;
+         color:white;
+
+}
+
+.sign-up-form h1
+{
+    color: rgb(255, 255, 255);
+    margin-bottom: 30px;
+    
+}
+
+.input-box
+{
+    border-radius: 20px;
+    padding: 10px;
+    margin: 10px 0;
+    width: 100%;
+    border: 1px solid #999;
+    outline: none;
+
+}
+
+
+button
+{
+    color: fff;
+    width: 100%;
+    padding: 10px;
+    border-radius: 20px;
+    font-size: 15px;
+    margin: 10px 0;
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
+
+.signup-btn
+{
+    background-color: rgb(17, 170, 73);
+}
+
+
+nav{
+    display: flex;
+    padding: 2% 6%;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgb(8, 7, 7);
+    height: 60px;
+}
+
+nav img{
+    width: 150px;
+   
+}
+.nav-links{
+    flex: 1;
+    text-align: right;
+    background-color: black;
+    border: white;
+}
+
+.nav-links ul li{
+    list-style: none;
+    display: inline-block;
+    padding: 8px 12px;
+    position: relative;
+}
+
+.nav-links ul li ul li
+{
+    display: none;
+}
+
+.nav-links ul li a{
+    color: #fff; 
+    text-decoration: none;
+    font-size: 13px;
+}
+
+.nav-links ul li::after{
+    content: '';
+    width: 0%;
+    height: 2px;
+    background: #f44336;
+    display: block;
+    margin: auto;
+    transition: 0.5s;
+}
+
+.nav-links ul li:hover::after{
+    width: 100%;
+
+}

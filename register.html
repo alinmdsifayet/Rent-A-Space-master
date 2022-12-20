@@ -1,0 +1,76 @@
+<html>
+
+<head>
+    <title>Sign Up Form</title>
+    <link rel="stylesheet" href="registerstyle.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&display=swap" rel="stylesheet">
+    
+
+</head>
+
+
+
+<body>
+
+    
+    <nav>
+        <a href="index.html"><img src="logon.png"></a>
+            <div class="nav-links">
+                <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="">ABOUT</a></li>
+                    <li><a href="login.html">LOG IN</a></li>
+                    <li><a href="register.html">REGISTER</a></li>
+                    <li><a href="">CONTACT US</a></li>
+                </ul>
+
+            </div>
+    </nav>
+
+    <div class="container">
+        <div class="header">
+            <h2>Create Account</h2>
+        </div>
+        <form id="form" class="form">
+            <div class="form-control">
+                <label for="username">Username</label>
+                <input type="text" placeholder="Enter your username" id="username" />
+                <i class="fas fa-check-circle"></i>
+                <i class="fas fa-exclamation-circle"></i>
+                <small>Error message</small>
+            </div>
+            <div class="form-control">
+                <label for="username">Email</label>
+                <input type="email" placeholder="Enter your email" id="email" />
+                <i class="fas fa-check-circle"></i>
+                <i class="fas fa-exclamation-circle"></i>
+                <small>Error message</small>
+            </div>
+            <div class="form-control">
+                <label for="username">Password</label>
+                <input type="password" placeholder="Enter your password" id="password"/>
+                <i class="fas fa-check-circle"></i>
+                <i class="fas fa-exclamation-circle"></i>
+                <small>Error message</small>
+            </div>
+            <div class="form-control">
+                <label for="username">Password check</label>
+                <input type="password" placeholder="Confirm password" id="password2"/>
+                <i class="fas fa-check-circle"></i>
+                <i class="fas fa-exclamation-circle"></i>
+                <small>Error message</small>
+            </div>
+            <button>Register</button>
+
+            <hr>
+            <p>Want to be a host? <a href="hostregister.html">Sign Up as Host</a></p>
+        </form>
+    </div>
+    
+    <script  src="./registration.js"></script>
+
+   
+</body>

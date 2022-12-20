@@ -1,0 +1,446 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="icon" href="../../ICONS/mh1.png">
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+		integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" href="../../CSS Files/User Panel Designs/main.min.css">
+	<link rel="stylesheet" href="../../CSS Files/User Panel Designs/style.css">
+	<link rel="stylesheet" href="../../CSS Files/User Panel Designs/color.css">
+	<link rel="stylesheet" href="../../CSS Files/User Panel Designs/responsive.css">
+	<link rel="stylesheet" href="../../CSS Files/User Panel Designs/buttonDesign.css">
+
+
+	<title>News Feed</title>
+	<script>
+		if (!sessionStorage.getItem("uid")) {
+			window.location.href = `./userLogin.html`;
+		}
+	</script>
+
+</head>
+
+<body>
+	<div class="theme-layout">
+
+		<div class="responsive-header">
+			<div class="mh-head first Sticky">
+				<span class="mh-btns-left">
+					<a class="" href="#menu"><i class="fa fa-align-justify"></i></a>
+				</span>
+				<span class="mh-text">
+					<a href="newsfeed.html" title=""><img src="../../ICONS/m11.png" alt=""></a>
+				</span>
+				<span class="mh-btns-right">
+					<a class="fa fa-sliders" href="#shoppingbag"></a>
+				</span>
+			</div>
+			<div class="mh-head second">
+				<form class="mh-form">
+					<input placeholder="search" />
+					<a href="#/" class="fa fa-search"></a>
+				</form>
+			</div>
+
+			</li>
+			<li><span>Appointment</span>
+				<ul>
+					<li><a href="time-line.html" title="">timeline</a></li>
+					<li><a href="timeline-friends.html" title="">timeline friends</a></li>
+					<li><a href="timeline-groups.html" title="">timeline groups</a></li>
+					<li><a href="timeline-pages.html" title="">timeline pages</a></li>
+					<li><a href="timeline-photos.html" title="">timeline photos</a></li>
+					<li><a href="timeline-videos.html" title="">timeline videos</a></li>
+					<li><a href="fav-page.html" title="">favourite page</a></li>
+					<li><a href="groups.html" title="">groups page</a></li>
+					<li><a href="page-likers.html" title="">Likes page</a></li>
+					<li><a href="people-nearby.html" title="">people nearby</a></li>
+
+
+				</ul>
+			</li>
+			<li><span>Community</span>
+				<ul>
+					<li><a href="create-fav-page.html" title="">create fav page</a></li>
+					<li><a href="edit-account-setting.html" title="">edit account setting</a></li>
+					<li><a href="edit-interest.html" title="">edit-interest</a></li>
+					<li><a href="edit-password.html" title="">edit-password</a></li>
+					<li><a href="edit-profile-basic.html" title="">edit profile basics</a></li>
+					<li><a href="edit-work-eductation.html" title="">edit work educations</a></li>
+					<li><a href="messages.html" title="">message box</a></li>
+					<li><a href="inbox.html" title="">Inbox</a></li>
+					<li><a href="notifications.html" title="">notifications page</a></li>
+				</ul>
+			</li>
+			<li><span>Contact us</span>
+				<ul>
+					<li><a href="forum.html" title="">Forum Page</a></li>
+					<li><a href="forums-category.html" title="">Fourm Category</a></li>
+					<li><a href="forum-open-topic.html" title="">Forum Open Topic</a></li>
+					<li><a href="forum-create-topic.html" title="">Forum Create Topic</a></li>
+				</ul>
+			</li>
+			<li><span>About</span>
+				<ul>
+					<li><a href="shop.html" title="">Shop Products</a></li>
+					<li><a href="shop-masonry.html" title="">Shop Masonry Products</a></li>
+					<li><a href="shop-single.html" title="">Shop Detail Page</a></li>
+					<li><a href="shop-cart.html" title="">Shop Product Cart</a></li>
+					<li><a href="shop-checkout.html" title="">Product Checkout</a></li>
+				</ul>
+			</li>
+			<li><span>Help</span>
+				<ul>
+					<li><a href="support-and-help.html" title="">Support & Help</a></li>
+					<li><a href="support-and-help-detail.html" title="">Support & Help Detail</a></li>
+					<li><a href="support-and-help-search-result.html" title="">Support & Help Search Result</a></li>
+				</ul>
+			</li>
+
+			<li><a href="about.html" title="">about</a></li>
+			<li><a href="about-company.html" title="">About Us2</a></li>
+			<li><a href="contact.html" title="">contact</a></li>
+			<li><a href="contact-branches.html" title="">Contact Us2</a></li>
+			<li><a href="widgets.html" title="">Widgts</a></li>
+			</ul>
+			</nav>
+			<nav id="shoppingbag">
+				<div>
+					<div class="">
+
+						<h4 class="panel-title">Account Setting</h4>
+						<form method="post">
+							<div class="setting-row">
+								<span>Sub users</span>
+								<input type="checkbox" id="switch6" />
+								<label for="switch6" data-on-label="ON" data-off-label="OFF"></label>
+							</div>
+							<div class="setting-row">
+								<span>personal account</span>
+								<input type="checkbox" id="switch7" />
+								<label for="switch7" data-on-label="ON" data-off-label="OFF"></label>
+							</div>
+							<div class="setting-row">
+								<span>Business account</span>
+								<input type="checkbox" id="switch8" />
+								<label for="switch8" data-on-label="ON" data-off-label="OFF"></label>
+							</div>
+							<div class="setting-row">
+								<span>Show me online</span>
+								<input type="checkbox" id="switch9" />
+								<label for="switch9" data-on-label="ON" data-off-label="OFF"></label>
+							</div>
+							<div class="setting-row">
+								<span>Delete history</span>
+								<input type="checkbox" id="switch10" />
+								<label for="switch10" data-on-label="ON" data-off-label="OFF"></label>
+							</div>
+							<div class="setting-row">
+								<span>Expose author name</span>
+								<input type="checkbox" id="switch11" />
+								<label for="switch11" data-on-label="ON" data-off-label="OFF"></label>
+							</div>
+						</form>
+					</div>
+				</div>
+			</nav>
+		</div>
+		<!--responsive header -->
+		<!--changed here-->
+		<div class="topbar stick">
+			<div class="logo">
+				<p style="font-weight: 600;font-size: larger;">
+					<a title="" href="newsfeed.html"><img src="../../ICONS/m11.png" width="40px" height="40px"
+							alt=""></a>
+					Shunbo
+				</p>
+			</div>
+
+			<div class="top-area">
+				<ul class="main-menu">
+					<li>
+						<a href="#" title="">News Feed</a>
+
+					</li>
+					<li>
+						<a href="#" title="">Communities</a>
+						<!-- <ul>
+						<li><a href="time-line.html" title="">timeline</a></li>
+						<li><a href="timeline-friends.html" title="">timeline friends</a></li>
+						<li><a href="timeline-groups.html" title="">timeline groups</a></li>
+						<li><a href="timeline-pages.html" title="">timeline pages</a></li>
+						<li><a href="timeline-photos.html" title="">timeline photos</a></li>
+						<li><a href="timeline-videos.html" title="">timeline videos</a></li>
+						<li><a href="groups.html" title="">groups page</a></li>
+						<li><a href="page-likers.html" title="">Likes page</a></li>
+						<li><a href="people-nearby.html" title="">people nearby</a></li>
+					</ul> -->
+					</li>
+					<li>
+						<a href="#" title="">Service Plans</a>
+
+					</li>
+					<li>
+						<a href="#" title="">About</a>
+
+					</li>
+					<li>
+						<a href="#" title="">Contact</a>
+
+					</li>
+					<li>
+						<a href="#" title="">Help</a>
+
+					</li>
+				</ul>
+				<ul class="setting-area">
+
+					</li>
+
+					<li>
+						<div class="dropdowns">
+							<span>5 New Messages</span>
+							<ul class="drops-menu">
+
+					</li>
+
+				</ul>
+				<a href="messages.html" title="" class="more-mesg">view more</a>
+			</div>
+			</li>
+
+			</ul>
+			<div class="user-img">
+				<img src="../../ICONS/p2.png" height="45px" width="45px" alt="">
+				<span class="status f-online"></span>
+
+			</div>
+			<!-- <span class="ti-menu main-menu" data-ripple=""></span> -->
+		</div>
+	</div>
+	<!-- topbar -->
+
+	<section>
+		<div class="gap gray-bg">
+			<div class="container-fluid">
+				<div class="row">
+					<div class="col-lg-12">
+						<div class="row" id="page-contents">
+							<div class="col-lg-3">
+								<aside class="sidebar static">
+									<div class="widget">
+										<h4 class="widget-title">Shortcuts</h4>
+										<ul class="naves">
+											<li>
+												<!-- <i class="ti-clipboard"></i> -->
+												<img src="../../ICONS/nfs.png" height="28px" width="28px" alt="">
+												<a href="newsfeed.html" title="">News feed</a>
+											</li>
+											<li>
+												<!-- <i class="ti-clipboard"></i> -->
+												<img src="../../ICONS/doc1.png" height="28px" width="28px" alt="">
+												<a href="docProfile.html" title="">My Profile</a>
+											</li>
+											<li>
+												<!-- <i class="ti-mouse-alt"></i> -->
+												<img src="../../ICONS/sp.png" height="28px" width="28px" alt="">
+												<a href="" title="">Shared Posts</a>
+											</li>
+
+											<li>
+												<!-- <i class="ti-files"></i> -->
+												<img src="../../ICONS/frnds.png" height="28px" width="28px" alt="">
+												<a href="" title="">My Community</a>
+											</li>
+
+											<!-- <li>
+												<!-- <i class="ti-comments-smiley"></i> 
+												<img src="../../ICONS/mkp.png" height="28px" width="28px" alt="">
+												<a href="" title="">Make Appointment</a>
+											</li> -->
+											<li>
+												<!-- <i class="ti-comments-smiley"></i> -->
+												<img src="../../ICONS/aps.png" height="28px" width="28px" alt="">
+												<a href="./userAppointmentList.html" title="">My Appointments</a>
+											</li>
+											<li>
+												<!-- <i class="ti-bell"></i> -->
+												<img src="../../ICONS/ns.png" height="28px" width="28px" alt="">
+												<a href="" title="">Notifications</a>
+											</li>
+
+											<li>
+												<!-- <i class="ti-power-off"></i> -->
+												<img src="../../ICONS/lg.png" height="28px" width="28px" alt="">
+												<a id="logoutBut" href="" title="">Logout</a>
+											</li>
+										</ul>
+									</div><!-- Shortcuts -->
+
+								</aside>
+							</div><!-- sidebar -->
+							<div class="col-lg-6">
+
+								<!--start of psychiatrist cards dynamically-->
+								<div class="card">
+									<div class="card-header">
+										<img src="../../ICONS/p2.png" width="60px" height="60px" alt="">
+
+										<img src="../../ICONS/cf.png" width="60px" height="60px" style="float: right;"
+											alt="">
+
+									</div>
+									<div class="card-body">
+										<form id="complaintform" method="POST">
+											<div class="row mb-3">
+												<label for="inputAID" class="col-sm-2 col-form-label">Appoint ID</label>
+												<div class="col-sm-10">
+													<input type="text" name="AID" class="form-control" id="aid"
+														placeholder="Write your appointment ID here">
+												</div>
+											</div>
+											<div class="row mb-3">
+												<label for="inputComplaint"
+													class="col-sm-2 col-form-label">Complaint</label>
+												<div class="col-sm-10">
+													<textarea class="form-control"
+														placeholder="Leave your complaint message here"
+														id="msg"></textarea>
+												</div>
+											</div>
+
+											<button type="submit" class="btn btn-danger"
+												style="float: right;">Send</button>
+
+										</form>
+
+
+
+
+									</div>
+								</div>
+
+
+
+
+
+
+								<!--end of psychiatrist cards -->
+
+
+
+							</div>
+							<!-- friends list sidebar -->
+							</aside>
+						</div><!-- sidebar -->
+					</div>
+				</div>
+			</div>
+		</div>
+		</div>
+	</section>
+
+	<div class="side-panel">
+
+		<h4 class="panel-title">Account Setting</h4>
+		<form method="post">
+			<div class="setting-row">
+				<span>Sub users</span>
+				<input type="checkbox" id="switch66" />
+				<label for="switch66" data-on-label="ON" data-off-label="OFF"></label>
+			</div>
+			<div class="setting-row">
+				<span>personal account</span>
+				<input type="checkbox" id="switch77" />
+				<label for="switch77" data-on-label="ON" data-off-label="OFF"></label>
+			</div>
+			<div class="setting-row">
+				<span>Business account</span>
+				<input type="checkbox" id="switch88" />
+				<label for="switch88" data-on-label="ON" data-off-label="OFF"></label>
+			</div>
+			<div class="setting-row">
+				<span>Show me online</span>
+				<input type="checkbox" id="switch99" />
+				<label for="switch99" data-on-label="ON" data-off-label="OFF"></label>
+			</div>
+			<div class="setting-row">
+				<span>Delete history</span>
+				<input type="checkbox" id="switch101" />
+				<label for="switch101" data-on-label="ON" data-off-label="OFF"></label>
+			</div>
+			<div class="setting-row">
+				<span>Expose author name</span>
+				<input type="checkbox" id="switch111" />
+				<label for="switch111" data-on-label="ON" data-off-label="OFF"></label>
+			</div>
+		</form>
+	</div>
+	<!-- side panel -->
+
+	<script src="js/main.min.js"></script>
+	<script src="js/script.js"></script>
+
+
+	<script>
+		document.getElementById('logoutBut').addEventListener('click', logout);
+		document.getElementById('complaintform').addEventListener('submit', makeComplaint);
+
+
+
+		function makeComplaint(e) {
+			e.preventDefault();
+
+			let aid = document.getElementById('aid').value;
+			let msg = document.getElementById('msg').value;
+			let uid = sessionStorage.getItem('uid');
+
+			fetch("http://127.0.0.1:8000/api/user/complaint", {
+					method: "POST",
+					headers: {
+						'Accept': "application/json, text/plain, */*",
+						"Content-type": "application/json",
+						//"Authorization": "Bearer " + token
+					},
+					body: JSON.stringify({
+						aid: aid,
+						uid: uid,
+						msg: msg
+					})
+				}).then((res) => res.json())
+				.then(data => {
+					console.log(data.res);
+					window.location.href = "./userAppointmentList.html";
+				})
+		}
+
+		function logout(e) {
+			e.preventDefault();
+			let token = sessionStorage.getItem('userToken');
+			console.log(token);
+			fetch("http://127.0.0.1:8000/api/doc/logout", {
+					method: "POST",
+					headers: {
+						'Accept': "application/json, text/plain, */*",
+						"Content-type": "application/json",
+						"Authorization": "Bearer " + token
+					},
+				}).then((res) => res.json())
+				.then(data => {
+					console.log('logged out');
+					sessionStorage.removeItem("uid");
+					sessionStorage.removeItem("userToken");
+					window.location.href = "./index.html";
+				})
+
+		}
+	</script>
+
+
+</body>
+
+</html>
